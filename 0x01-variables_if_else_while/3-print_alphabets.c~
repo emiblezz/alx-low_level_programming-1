@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int x = 'a';
+
+	while ( x <= 'z')
+	{
+		int lower_x = tolower(x);
+		putchar(lower_x);
+		x++;
+	}
+	int y = 'A'
+
+	while (y <= 'Z')
+	{
+		putchar(y);
+	}
+	putchar('\n');
+	return (0);
+}
