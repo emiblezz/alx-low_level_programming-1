@@ -7,20 +7,16 @@
 
 int main(void)
 {
-	int num = '1';
-	char space = ' ';
-	char comma = ',';
+	int num = '0';
 
 	while (num <= '9')
 	{
-		if (num < '9')
+		putchar(num);
+		if (num != '9')
 		{
-			putchar(num);
-			putchar(comma);
-			putchar(space);
+			putchar(',');
+			putchar(' ');
 		}
-		else
-			putchar(num);
 		num++;
 	}
 	putchar('\n');
