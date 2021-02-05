@@ -1,4 +1,4 @@
-#include <stdio.h>
+0;136;0c#include <stdio.h>
 
 /**
  * main - prints all possible different combinations of two digits.
@@ -21,18 +21,18 @@ int main(void)
 				for (ones2 = '0'; ones2 <= '9'; ones2++)/* prints ones digit*/
 				{
 					if ((ones < ones2) && (tens <= tens2))
+					{
+						putchar(tens);
+						putchar(ones);
+						putchar(' ');
+						putchar(tens2);
+						putchar(ones2);
+						if (!(ones == '8' && tens == '9'))/*addes comma and space*/
 						{
-							putchar(tens);
-							putchar(ones);
+							putchar(',');
 							putchar(' ');
-							putchar(tens2);
-							putchar(ones2);
-							if (!(ones == '8' && tens == '9'))/*addes comma and space*/
-							{
-								putchar(',');
-								putchar(' ');
-							}
 						}
+					}
 				}
 			}
 		}
