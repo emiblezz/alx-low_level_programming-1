@@ -20,8 +20,9 @@ for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
 		{
 			for (ones2 = '0'; ones2 <= '9'; ones2++)/* prints ones digit*/
 			{
-				if (((ones < ones2) || ((ones == 0) &&
-							(ones2 == 0))) &&
+				if ((((ones == 0) &&
+				      (ones2 == 0)) ||
+				     (ones < ones2)) &&
 				    (tens <= tens2))
 				{
 					putchar(tens);
