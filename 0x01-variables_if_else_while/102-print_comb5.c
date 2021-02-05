@@ -39,6 +39,5 @@ for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
 	}
 }
 putchar('\n');
-
 return (0);
 }
