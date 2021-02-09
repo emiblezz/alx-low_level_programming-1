@@ -38,4 +38,12 @@ int _islower(int n);
 
 int print_sign(int n);
 
+/**
+ * _abs - gives the absolute value of a number
+ * @n: The number to be in the absolute value
+ * Return: the absolute valued number
+ */
+
+int _abs(int n);
+
 #endif
