@@ -1,5 +1,6 @@
 #ifndef HOLBERTON_H_SEEN
 #define HOLBERTON_H_SEEN
+#include <stdio.h>
 
 /**
  * positive_or_negative - checkes wheteher a number is positive or negative
