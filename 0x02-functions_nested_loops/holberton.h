@@ -28,6 +28,6 @@ void print_alphabet_x10(void);
  * Return: 1 if lower case othewise 0
  */
 
-int _islower(int c);
+int _islower(int n);
 
 #endif
