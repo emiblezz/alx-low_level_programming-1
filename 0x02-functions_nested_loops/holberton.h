@@ -30,4 +30,12 @@ void print_alphabet_x10(void);
 
 int _islower(int n);
 
+/**
+ * int print_sign - checks for a number sign
+ * @n: the number to be checked
+ * Return: 1 for num greater than 0, 0 for 0, -1 for less than 0
+ */
+
+int print_sign(int n);
+
 #endif
