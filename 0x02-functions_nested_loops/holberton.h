@@ -24,7 +24,7 @@ void print_alphabet_x10(void);
 
 /**
  * _islower - check lower case
- * @c: a character to be checked
+ * @n: a character to be checked
  * Return: 1 if lower case othewise 0
  */
 
@@ -53,5 +53,11 @@ int _abs(int n);
  */
 
 int print_last_digit(int n);
+
+/**
+ * jack_bauer - print every minutes of the day from 00:00 to 23:59
+ */
+
+void jack_bauer(void);
 
 #endif
