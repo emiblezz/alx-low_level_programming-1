@@ -48,7 +48,7 @@ int _abs(int n);
 
 /**
  * print_last_digit - print last digit of integer
- * @n: integer argument
+ * @n: integer number
  * Return: last digit of number
  */
 
