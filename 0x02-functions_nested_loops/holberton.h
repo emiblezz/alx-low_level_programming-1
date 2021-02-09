@@ -68,16 +68,17 @@ void times_table(void);
 
 /**
  * add - adds tow integers
- * @a - number 1 to be added
- * @b - number 2 to be added
+ * @a: number 1 to be added
+ * @b: number 2 to be added
  * Return: The result of the addition
  */
 
-int add (int a, int b);
+int add(int a, int b);
 
 /**
  * print_to_98 - print numbers n to 98
- * @n: the initial number
  */
+
+void print_to_98(void);
 
 #endif
