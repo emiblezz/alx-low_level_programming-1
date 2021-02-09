@@ -30,6 +30,15 @@ void print_alphabet_x10(void);
 
 int _islower(int n);
 
+
+/**
+ * _isalpha - checkes whether the input is a letter, lowercase or uppercase
+ * @c: the character to be checked
+ * Return: 1 if it is a letter, lower, or uppercase otherwise 0
+ */
+
+int _isalpha(int c);
+
 /**
  * int print_sign - checks for a number sign
  * @n: the number to be checked
