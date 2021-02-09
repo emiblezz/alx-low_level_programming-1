@@ -2,7 +2,6 @@
 
 /**
  * print_alphabet - prints alphabets in lower case followed by a new line
- * Return: Alwasy 0
  */
 
 void print_alphabet(void)
