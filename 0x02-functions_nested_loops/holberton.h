@@ -77,8 +77,9 @@ int add(int a, int b);
 
 /**
  * print_to_98 - print numbers n to 98
+ * @n: the intial number to start from
  */
 
-void print_to_98(void);
+void print_to_98(int n);
 
 #endif
