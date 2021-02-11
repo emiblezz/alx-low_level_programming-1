@@ -60,4 +60,11 @@ void more_numbers(void);
 
 void print_line(int n);
 
+/**
+ * print_diagonal - draws a diagonal line on the terminal
+ * @n: The length of the line
+ */
+
+void print_diagonal(int n);
+
 #endif
