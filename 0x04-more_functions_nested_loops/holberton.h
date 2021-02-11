@@ -1,5 +1,13 @@
 #ifndef _HOLBERTON_
 #define _HOLBERTON_
+/**
+ * _putchar - prints the given char
+ * @c: the char to be printed
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+
+int _putchar(char c);
 
 /**
  * _isupper - cheches for uppercase character
@@ -25,5 +33,11 @@ int _isdigit(int c);
  */
 
 int mul(int a, int b);
+
+/**
+ * print_numbers - prints integer from 0 to 9
+ */
+
+void print_numbers(void);
 
 #endif
