@@ -1,6 +1,7 @@
 #ifndef _HOLBERTON
 #define _HOLBERTON
 
+int _putchar(char c);
 
 /**
  * reset_to_98 - updates the value it points to to 98.
@@ -16,5 +17,20 @@ void reset_to_98(int *n);
  */
 
 void swap_int(int *a, int *b);
+
+/**
+ * _strlen - counts the lengyh of a string
+ * @s: a string to be counted
+ * Return: The length of the string
+ */
+
+int _strlen(char *s);
+
+/**
+ * _puts - prints a string followed by a new line
+ * @str: a string to be printed
+ */
+
+void _puts(char *str);
 
 #endif
