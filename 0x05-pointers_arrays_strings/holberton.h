@@ -1,4 +1,4 @@
-#ifndef _HOLBERTON
+0;136;0c#ifndef _HOLBERTON
 #define _HOLBERTON
 
 int _putchar(char c);
@@ -46,5 +46,12 @@ void print_rev(char *s);
  */
 
 void rev_string(char *s);
+
+/**
+ * puts2 - prints every other character
+ * @str: the string
+ */
+
+void puts(char *str);
 
 #endif
