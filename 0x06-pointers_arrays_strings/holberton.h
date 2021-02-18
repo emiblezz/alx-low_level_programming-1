@@ -51,3 +51,4 @@ void reverse_array(int *a, int n);
  * Return: string with all letters capitalized
  */
 
+#endif
