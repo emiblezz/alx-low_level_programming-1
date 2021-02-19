@@ -63,25 +63,17 @@ char *cap_string(char *s);
 
 /**
  * rot13 - encode string using rot13
- * @s: string to encode
+ * @s: string to encode to rot13
  * Return: encoded string
  */
 
 char *rot13(char *s);
 
 /**
- * leet - encode string into 1337 leet
- * @s: string to manipulate
- * Return: string
- */
-
-char *leet(char *s);
-
-/**
- * print_number - print an integer, without using long, arrays, or pointers
- * @n: number to be printed
- */
+ * print_number - print numbers chars
+ * @n: integer
+ * Return: 0
+ **/
 
 void print_number(int n);
-
 #endif
