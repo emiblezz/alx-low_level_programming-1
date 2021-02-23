@@ -82,4 +82,13 @@ void print_chessboard(char (*a)[8]);
  */
 void print_diagsums(int *a, int size);
 
+/**
+ *set_string - print character in a string
+ *
+ *@s: print char
+ *@to: sizes
+ *Return: number of characters
+ */
+void set_string(char **s, char *to);
+
 #endif
