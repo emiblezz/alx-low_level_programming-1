@@ -64,4 +64,14 @@ char *_strpbrk(char *s, char *accept);
  */
 
 char *_strstr(char *haystack, char *needle);
+
+/**
+ * print_chessboard -print character in a string
+ *
+ *@a: print char
+ *Return: number of characters
+ */
+void print_chessboard(char (*a)[8]);
+
+
 #endif
