@@ -73,5 +73,13 @@ char *_strstr(char *haystack, char *needle);
  */
 void print_chessboard(char (*a)[8]);
 
+/**
+ *print_diagsums - print character in a string
+ *
+ *@a: print char
+ *@size: sizes
+ *Return: number of characters
+ */
+void print_diagsums(int *a, int size);
 
 #endif
