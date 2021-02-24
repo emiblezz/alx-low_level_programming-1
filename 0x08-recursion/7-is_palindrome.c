@@ -8,9 +8,9 @@
 
 int _strlen_recursion(char *s)
 {
-        if (*s == '\0')
-                return (0);
-        return (1 + _strlen_recursion(++s));
+	if (*s == '\0')
+		return (0);
+	return (1 + _strlen_recursion(++s));
 }
 
 /**
@@ -30,6 +30,12 @@ int compare(char *head, char *tail)
 
 	return (0);
 }
+
+/**
+ * is_palindrome - check if palindrome
+ * @s: string to check
+ * Return: 1 if palindrome, 0 if not
+ */
 
 int is_palindrome(char *s)
 {
