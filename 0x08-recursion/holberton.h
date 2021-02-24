@@ -39,4 +39,14 @@ int _strlen_recursion(char *s);
  */
 int factorial(int n);
 
+/**
+ * _pow_recursion - power function x raised to y
+ * @x: Base
+ * @y: power
+ * Return: the result
+ */
+
+int _pow_recursion(int x, int y);
+
+
 #endif
