@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include "dog.h"
 
-   /**
-    * len - find length of string
-    * @str: string
-    * Return: length
-    */
+/**
+ * len - find length of string
+ * @str: string
+ * Return: length
+*/
 int len(char *str)
 {
 	int i;
