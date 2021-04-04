@@ -1,0 +1,14 @@
+#include "holberton.h"
+#include <stdio.h>
+
+int main(int argc, char *argv[] __attribute__((unused)))
+{
+	int i;
+
+	while(i < argc)
+		i++;
+	_putchar(i);
+	_putchar('\n');
+
+	return (0);
+}
