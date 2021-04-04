@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * int _index _ search for integer in array via function pinter
+ * int_index - search for integer in array via function pinter
  * @array: array
  * @size: size of array
  * @cmp: pointer to searching/ comparing function that we need to execute
