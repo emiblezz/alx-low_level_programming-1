@@ -1,5 +1,11 @@
 #include "holberton.h"
 
+/**
+ * binary_to_uint - convert binary to unsigned int
+ * @b: binary to be manipulated
+ * Return: unsigned int
+ */
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int sum = 0;
