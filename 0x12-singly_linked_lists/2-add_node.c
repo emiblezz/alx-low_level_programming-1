@@ -33,9 +33,9 @@ list_t *add_node(list_t **head, const char *str)
 	if (s == NULL)
 	{
 		free(head);
-		return(NULL);
+		return (NULL);
 	}
-	if(new_node == NULL)
+	if (new_node == NULL)
 		return (NULL);
 
 	new_node->str = s;
