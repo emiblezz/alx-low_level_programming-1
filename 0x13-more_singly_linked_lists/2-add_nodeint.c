@@ -2,7 +2,8 @@
 
 /**
  * add_nodeint - add a node at the beginning of litint_t
- * @h: linked list
+ * @head: pointer to the head of the linked list
+ * @n: data to add to new node
  * Return: the address of the new element or NULL if it failed
  */
 
