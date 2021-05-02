@@ -30,7 +30,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	temp = *head;
 
-	while(temp->next != NULL)/*recurse until you find the last element*/
+	while (temp->next != NULL)/*recurse until you find the last element*/
 		temp = temp->next;
 
 	last_node->n = n;
