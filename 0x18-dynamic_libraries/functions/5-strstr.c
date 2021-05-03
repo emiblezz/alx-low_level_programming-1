@@ -1,5 +1,4 @@
 #include "holberton.h"
-#define NULL 0
 
 /**
  * _strstr - locate and return pointer to first occurence of substring
