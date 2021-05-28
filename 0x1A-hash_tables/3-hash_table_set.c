@@ -9,39 +9,39 @@
  * Return: 1 if success, 0 if fail
  */
 int create_and_add_node(hash_table_t *ht, const char *key, const char *value,
-			unsigned long int idx)
+			unsigned long int index)
 {
-	hash_node_t *node = NULL;
-	char *k;
-	char *v;
+	hash_node_t *node;
+	char *keys;
+	char *values;
 
 	node = malloc(sizeof(hash_node_t));
 	if (!node)
 		return (0);
 
-	k = strdup(key);
-	if (!k)
+	keys = strdup(key);
+	if (!keys)
 	{
 		free(node);
 		return (0);
 	}
 
-	v = strdup(value);
-	if (!v)
+	values = strdup(value);
+	if (!values)
 	{
-		free(k);
+		free(keys);
 		free(node);
 		return (0);
 	}
 
-	node->key = k;
-	node->value = v;
+	node->key = keys;
+	node->value = values;
 
-	if ((ht->array)[idx] == NULL)
+	if ((ht->array)[index] == NULL)
 		node->next = NULL;
 	else
-		node->next = (ht->array)[idx];
-	(ht->array)[idx] = node;
+		node->next = (ht->array)[index];
+	(ht->array)[index] = node;
 
 	return (1);
 }
@@ -55,21 +55,16 @@ int create_and_add_node(hash_table_t *ht, const char *key, const char *value,
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	/* get index */
-	/* if key already exists, update value and return */
-	/* else create node */
-	/* set ht idx ptr to node; else add node to front if collision */
-
-	unsigned long int idx;
+	unsigned long int index;
 	hash_node_t *node = NULL;
 	char *v;
 
 	if (!ht || !(ht->array) || !key || strlen(key) == 0 || !value)
 		return (0);
 
-	idx = key_index((const unsigned char *)key, ht->size);
+	index = key_index((const unsigned char *)key, ht->size);
 
-	node = (ht->array)[idx];
+	node = (ht->array)[index];
 	while (node && (strcmp(key, node->key) != 0))
 		node = node->next;
 	if (node != NULL)
@@ -83,5 +78,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (1);
 	}
 
-	return (create_and_add_node(ht, key, value, idx));
+	return (create_and_add_node(ht, key, value, index));
 }
