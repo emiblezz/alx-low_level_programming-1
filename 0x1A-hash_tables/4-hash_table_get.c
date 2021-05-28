@@ -9,7 +9,7 @@
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	int index = key_index((const unsigned char*)key, ht->size);
+	int index = key_index((const unsigned char *)key, ht->size);
 	hash_node_t *node;
 
 	if (!ht->array[index])
@@ -22,5 +22,5 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (!node)
 		return (NULL);
 	else
-		return node->value;
+		return (node->value);
 }
