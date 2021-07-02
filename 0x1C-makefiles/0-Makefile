@@ -1,3 +1,3 @@
-all:
+all: m.h main.c holberton.c
 	echo "gcc main.c holberton.c -o holberton"
 	gcc main.c holberton.c -o holberton
