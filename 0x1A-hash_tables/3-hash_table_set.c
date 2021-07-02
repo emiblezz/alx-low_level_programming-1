@@ -59,15 +59,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *node = NULL;
 	char *v;
 
-	if (!ht || !(ht->array) || !key || strlen(key) == 0 || !value)
+	if (!ht || !key || !value)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
 
 	node = (ht->array)[index];
-	while (node && (strcmp(key, node->key) != 0))
+
+	while (node && (strcmp(key, node->key)))
 		node = node->next;
-	if (node != NULL)
+	if (node)
 	{
 		v = strdup(value);
 		if (!v)
