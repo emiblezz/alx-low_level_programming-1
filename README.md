@@ -6,7 +6,7 @@
 > you can find each directory detail in each directories READMe.md
 ### Built using
 - C
-- Pytgib
+- Python
 - OS: Ubuntu 14.04 LTS
 - Style guidelines: Betty -  PEP 8 (version 1.7) -  Google Style Python Docstrings
 ### Author
