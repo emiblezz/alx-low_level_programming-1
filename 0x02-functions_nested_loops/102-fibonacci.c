@@ -11,12 +11,16 @@ int main(void)
 
 	for (i = 0; i < 25; i++)
 	{
-		if (i == 0 || i == 24)
+		if (i == 0)
 		{
 			printf("%li, %li", first_num, second_num);
 			first_num += second_num;
 			second_num += first_num;
 			continue;
+		}
+		if (i == 24)
+		{
+			printf(", %li, %li", first_num, second_num);
 		}
 		printf(", %li, %li", first_num, second_num);
 		first_num += second_num;
