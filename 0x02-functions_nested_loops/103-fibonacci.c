@@ -13,7 +13,7 @@ int main(void)
 	{
 		prev_num = current_num;
 		current_num += prev_num;
-		if (current_num % 2 == 0)
+		if (sum <= 4000000 && current_num % 2 == 0)
 			sum += current_num;
 	}
 	printf("%d\n", sum);
