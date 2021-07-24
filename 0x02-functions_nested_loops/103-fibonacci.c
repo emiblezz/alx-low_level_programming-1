@@ -5,17 +5,23 @@
  */
 int main(void)
 {
-	long prev_num = 1;
-	long current_num = 2;
 	int sum = 0;
+	int a;
+	int b;
+	int second = 1;
 
-	while (current_num < 4000000)
+	a = 1;
+	b = 1;
+
+	while (b < 4000000)
 	{
-		prev_num = current_num;
-		current_num += prev_num;
-		if (current_num < 4000000 && current_num % 2 == 0)
-			sum += current_num;
+		second = a + b;
+		a = b;
+		b = second;
+		if ((second <= 4000000) && (second % 2 == 0))
+			sum += second;
 	}
 	printf("%d\n", sum);
+
 	return (0);
 }
