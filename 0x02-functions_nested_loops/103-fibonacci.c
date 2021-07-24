@@ -13,9 +13,10 @@ int main(void)
 	{
 		prev_num = current_num;
 		current_num += prev_num;
-		if (sum <= 4000000 && current_num % 2 == 0)
+        printf("%li-",current_num);
+		if (current_num < 4000000 && current_num % 2 == 0)
 			sum += current_num;
 	}
-	printf("%d\n", sum);
+	printf("--%d\n", sum);
 	return (0);
 }
