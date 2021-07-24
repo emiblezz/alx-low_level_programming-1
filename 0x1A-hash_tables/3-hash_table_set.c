@@ -5,7 +5,7 @@
  * @ht: hash table
  * @key: key; can't be empty string
  * @value: value
- * @idx: index to insert in at hash table
+ * @index: index to insert in at hash table
  * Return: 1 if success, 0 if fail
  */
 int create_and_add_node(hash_table_t *ht, const char *key, const char *value,
