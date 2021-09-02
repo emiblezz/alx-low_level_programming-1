@@ -2,7 +2,11 @@
 #include <math.h>
 
 /**
- *
+ * jump_search - search through an array using jump search algorithm
+ * @array: the array
+ * @size: the size of the array
+ * @value: the value to be searched
+ * Return: the index of the found value else -1
  */
 int jump_search(int *array, size_t size, int value)
 {
