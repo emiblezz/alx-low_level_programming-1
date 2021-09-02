@@ -12,6 +12,9 @@ int interpolation(int *arr, int low, int high, int value)
 {
 	size_t pos;
 
+	if (!arr)
+		return (-1);
+
 	if (low <= high && value >= arr[low] && value <= arr[high])
 	{
 		pos = low + (((double)(high - low) /
