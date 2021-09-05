@@ -41,20 +41,19 @@ int exponential_search(int *array, size_t size, int value)
     size_t bound = 1, higher;
 
     if (!array)
-        return (-1);
-    if (size == 0) 
-        return (-1);
-
-    while (bound < size && array[bound] < value) 
+	    return (-1);
+    if (size == 0)
+	    return (-1);
+    while (bound < size && array[bound] < value)
     {
-        printf("Value checked array[%d] = [%d]\n", (int)bound, array[bound]);
-        bound *= 2;
+	    printf("Value checked array[%d] = [%d]\n", (int)bound, array[bound]);
+	    bound *= 2;
     }
     if (bound >= size)
-        higher = size - 1;
+	    higher = size - 1;
     else
         higher = bound + 1;
     int res = binary_search_recursive(array, size, value, bound / 2, higher);
 
-	return (res);
+    return (res);
 }
