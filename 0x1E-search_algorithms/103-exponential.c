@@ -11,11 +11,12 @@
 int binary_search_recursive(int *array, size_t size,
 			     int value, int left, int right)
 {
+	int mid = (left + right) / 2, i;
+
 	if (!array)
 		return (-1);
 	if (left > right || right < left)
 		return (-1);
-	int mid = (left + right) / 2, i;
 
 	printf("Searching in array: ");
 	for (i = left; i <= right; i++)
