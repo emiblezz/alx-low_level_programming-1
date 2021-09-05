@@ -19,6 +19,7 @@ int interpolation(int *arr, int low, int high, int value)
 	{
 		pos = low + (((double)(high - low) /
 			      (arr[high] - arr[low])) * (value - arr[low]));
+
 		printf("Value checked array[%d] = [%d]\n", (int)pos, arr[pos]);
 		if (arr[pos] == value)
 			return (pos);
