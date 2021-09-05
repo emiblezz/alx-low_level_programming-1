@@ -60,7 +60,8 @@ int exponential_search(int *array, size_t size, int value)
 		higher = size - 1;
 	else
 	    higher = bound;
-    printf("Value found between indexes [%d] and [%d]\n", (int)bound / 2, (int)higher);
+	printf("Value found between indexes [%d] and [%d]\n", (int)bound / 2,
+	       (int)higher);
 	int res = binary_search_recursive(array, size, value, bound / 2, higher);
 
 	return (res);
