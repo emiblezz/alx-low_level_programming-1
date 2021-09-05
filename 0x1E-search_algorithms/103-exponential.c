@@ -35,25 +35,31 @@ int binary_search_recursive(int *array, size_t size,
 		return (binary_search_recursive(array, size, value,
 						mid + 1, right));
 }
-
+/**
+ * exponential_search - searches through an array using the exponential_search
+ * @array: the array
+ * @size: the size of the array
+ * @value: the value to be searched
+ * Return: the index of the value else -1 if not found
+ */
 int exponential_search(int *array, size_t size, int value)
 {
-    size_t bound = 1, higher;
+	size_t bound = 1, higher;
 
-    if (!array)
-	    return (-1);
-    if (size == 0)
-	    return (-1);
-    while (bound < size && array[bound] < value)
-    {
-	    printf("Value checked array[%d] = [%d]\n", (int)bound, array[bound]);
+	if (!array)
+		return (-1);
+	if (size == 0)
+		return (-1);
+	while (bound < size && array[bound] < value)
+	{
+		printf("Value checked array[%d] = [%d]\n", (int)bound, array[bound]);
 	    bound *= 2;
-    }
-    if (bound >= size)
-	    higher = size - 1;
-    else
-        higher = bound + 1;
-    int res = binary_search_recursive(array, size, value, bound / 2, higher);
+	}
+	if (bound >= size)
+		higher = size - 1;
+	else
+	    higher = bound + 1;
+	int res = binary_search_recursive(array, size, value, bound / 2, higher);
 
-    return (res);
+	return (res);
 }
