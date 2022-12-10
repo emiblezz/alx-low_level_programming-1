@@ -1,12 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
+/* more headers goes there */
 
-/**
- * main - tells if a number is positive, nagative, or zero
- * Return: Always 0 (Success)
- */
-
+/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
